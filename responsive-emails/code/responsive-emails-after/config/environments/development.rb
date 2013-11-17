@@ -26,5 +26,20 @@ ResponsiveEmails::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # Use this to open emails on the browser
   config.action_mailer.delivery_method = :letter_opener
+
+  # Use this to send real emails
+  # config.action_mailer.default_url_options = { :host => 'zamith.pt' }
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   :address  => "smtp.gmail.com",
+  #   :port  => 587,
+  #   :domain => ENV['EMAIL_DOMAIN'],
+  #   :user_name  => ENV['EMAIL_USERNAME'],
+  #   :password  => ENV['EMAIL_PASSWORD'],
+  #   :authentication  => :plain,
+  #   :enable_starttls_auto => true
+  # }
 end
